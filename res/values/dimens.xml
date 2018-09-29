@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <dimen name="actionbar_margin">15dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="login_main_margin">15dp</dimen>
+    <dimen name="login_main_padding">40dp</dimen>
+    <dimen name="login_logo_margin">10dp</dimen>
+    <dimen name="login_des_margin">30dp</dimen>
+    <dimen name="login_button_height">46dp</dimen>
+    <dimen name="login_layout_margin">50dp</dimen>
+    <dimen name="split_line_margin">20dp</dimen>
+    <dimen name="menu_button_height">50dp</dimen>
+    <dimen name="menu_horizon_margin">55dp</dimen>
+    <dimen name="menu_top_margin">50dp</dimen>
+    <dimen name="menu_bottom_margin">67dp</dimen>
+    <dimen name="menu_between_margin">58dp</dimen>
+
+    <dimen name="list_margin">13dp</dimen>
+    <dimen name="list_text_padding">7dp</dimen>
+    <dimen name="list_text_margin">15dp</dimen>
+    <dimen name="list_text_extend_padding">22dp</dimen>
+    <dimen name="list_radiogroup_margin">48dp</dimen>
+    <dimen name="list_radiobtn_margin">11dp</dimen>
+    <dimen name="list_radiobtn_padding">40dp</dimen>
+    <dimen name="list_spinner_padding">1dp</dimen>
+    <dimen name="list_ensure_margin">25dp</dimen>
+    <dimen name="list_ensure_long_margin">55dp</dimen>
+    <dimen name="ensure_btn_width">215dp</dimen>
+    <dimen name="ensure_btn_height">45dp</dimen>
+    <dimen name="ensure_btn_margin_top">30dp</dimen>
+    <dimen name="result_title_margin">35dp</dimen>
+    <dimen name="create_add_margin">40dp</dimen>
+    <dimen name="create_add_btn_layout">80dp</dimen>
+    <dimen name="pre_order_title_height">42dp</dimen>
+    <dimen name="pre_order_item_height">30dp</dimen>
+    <dimen name="pre_order_bottom_height">44dp</dimen>
+    <dimen name="history_cursor_width">100dp</dimen>
+    <dimen name="dialog_layout_width">270dp</dimen>
+    <dimen name="dialog_layout_height">230dp</dimen>
+    <dimen name="dialog_button_width">95dp</dimen>
+    <dimen name="dialog_button_height">44dp</dimen>
+    <dimen name="credit_login_margin">103dp</dimen>
+    <dimen name="dialog_item_padding">3dp</dimen>
+    <dimen name="dialog_item_height">36dp</dimen>
+    <dimen name="dialog_credit_height">310dp</dimen>
+    <dimen name="dialog_item_top">60dp</dimen>
+    <dimen name="manage_ensure_h_paddding">12dp</dimen>
+    <dimen name="manage_ensure_v_paddding">7dp</dimen>
+    <dimen name="code_btn_width">100dp</dimen>
+    <dimen name="code_btn_height">30dp</dimen>
+    <dimen name="recyle_list_height">85dp</dimen>
+
+    <dimen name="actionbar_text_size">18sp</dimen>
+    <dimen name="login_bottom">14sp</dimen>
+    <dimen name="login_main">16sp</dimen>
+    <dimen name="login_input_hint">15sp</dimen>
+    <dimen name="login_title_medium">20sp</dimen>
+    <dimen name="menu_text_size">18sp</dimen>
+
+    <integer name="num_columns">3</integer>
+</resources>

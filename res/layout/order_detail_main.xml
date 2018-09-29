@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin" >
+
+        <TextView
+            android:id="@+id/pre_order_time_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_time"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <ImageView
+            android:id="@+id/pre_order_rfid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/menu_order"
+            android:src="@drawable/new_user"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/pre_order_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:layout_toLeftOf="@id/pre_order_rfid"
+            android:layout_toRightOf="@id/pre_order_time_title"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_time"
+            android:textColor="@color/dialog_info"
+            android:textSize="@dimen/login_input_hint" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_category"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_category"
+            android:textColor="@color/dialog_info"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/list_margin"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:layout_marginTop="@dimen/list_margin"
+        android:background="@drawable/dotted_line"
+        android:layerType="software" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_account"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_account"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_account"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_number"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:autoLink="phone|email"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_number"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_addr"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_addr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_addr_hint"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/list_margin"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:layout_marginTop="@dimen/list_margin"
+        android:background="@drawable/dotted_line"
+        android:layerType="software" />
+
+    <LinearLayout
+        android:id="@+id/ll_order_manager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_manager"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_manager"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_sn"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_sn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:gravity="center_vertical"
+            android:hint="@string/pre_order_sn"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pre_order_comments"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_comments"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/list_ensure_margin"
+            android:gravity="center_vertical"
+            android:text="@string/pre_order_comment_msg"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+</LinearLayout>

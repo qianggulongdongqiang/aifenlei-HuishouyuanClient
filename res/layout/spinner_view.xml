@@ -1,0 +1,26 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/text_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:paddingStart="@dimen/list_text_padding"
+        android:paddingEnd="@dimen/login_main_margin"
+        android:textSize="@dimen/login_input_hint"
+        android:textColor="@color/login_title"
+        android:textColorHint="@color/input_hint" />
+
+    <Button
+        android:id="@+id/image_spinner"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/spinner_selector" />
+
+</RelativeLayout>

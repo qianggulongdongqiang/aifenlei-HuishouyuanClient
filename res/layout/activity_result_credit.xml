@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/score_result_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <View
+        android:id="@+id/score_result_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/score_result_actionbar"
+        android:background="@color/backgroud" />
+
+    <ImageView
+        android:id="@+id/score_result_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_default_selector"
+        android:contentDescription="@string/ensure_ok_back"
+        android:src="@drawable/home_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/score_result_home"
+        android:layout_below="@id/score_result_divider"
+        android:gravity="center|center_vertical"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/succeed"
+            android:contentDescription="@string/ensure_new" />
+
+        <TextView
+            android:id="@+id/score_result_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/result_title_margin"
+            android:text="@string/ensure_ok_credit"
+            android:textColor="@color/black"
+            android:textSize="@dimen/menu_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:layout_marginTop="@dimen/result_title_margin"
+            android:gravity="center_horizontal"
+            android:weightSum="5"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_weight="2"
+                android:paddingStart="@dimen/list_text_padding"
+                android:text="@string/recyle_account"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/menu_text_size" />
+
+            <TextView
+                android:id="@+id/score_result_account"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_weight="3"
+                android:hint="@string/recyle_account"
+                android:layout_marginStart="@dimen/list_text_padding"
+                android:paddingStart="@dimen/list_text_padding"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/menu_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_item_height"
+            android:gravity="center_horizontal"
+            android:weightSum="5"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:layout_weight="2"
+                android:paddingStart="@dimen/list_text_padding"
+                android:text="@string/finishe_credit_end"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/menu_text_size" />
+
+            <TextView
+                android:id="@+id/score_result_score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:layout_weight="3"
+                android:hint="@string/recyle_account"
+                android:layout_marginStart="@dimen/list_text_padding"
+                android:paddingStart="@dimen/list_text_padding"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/menu_text_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/score_back"
+            android:layout_width="@dimen/ensure_btn_width"
+            android:layout_height="@dimen/ensure_btn_height"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/login_layout_margin"
+            android:background="@drawable/rectangle_button_selector"
+            android:text="@string/credit_continue"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_main" />
+    </LinearLayout>
+
+</RelativeLayout>

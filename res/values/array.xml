@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="epc_list">
+        <item>"A01533B2DDD9014000000000"</item>
+        <item>"A01633B2DDD9014000000000"</item>
+        <item>"A01733B2DDD9014000000000"</item>
+        <item>"A01833B2DDD9014000000000"</item>
+        <item>"A02033B2DDD9014000000000"</item>
+    </string-array>
+    <string-array name="score_list">
+        <item>@string/credit_type_good</item>
+        <item>@string/credit_type_money</item>
+    </string-array>
+</resources>

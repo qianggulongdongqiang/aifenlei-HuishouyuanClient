@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/finish_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <View
+        android:id="@+id/finish_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/finish_actionbar"
+        android:background="@color/backgroud" />
+
+    <TextView
+        android:id="@+id/finish_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_top_margin"
+        android:layout_below="@id/finish_divider"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/ensure_ok_order"
+        android:textColor="@color/yellow_default"
+        android:textSize="@dimen/actionbar_text_size" />
+
+    <LinearLayout
+        android:id="@+id/finish_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/backgroud"
+        android:orientation="horizontal"
+        android:paddingTop="1dp"
+        android:weightSum="2" >
+
+        <ImageView
+            android:id="@+id/finish_home"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/menu_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/button_default_selector"
+            android:contentDescription="@string/ensure_ok_back"
+            android:src="@drawable/home_icon" />
+
+        <ImageView
+            android:id="@+id/finish_credit"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/menu_button_height"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:contentDescription="@string/new_order"
+            android:src="@drawable/jifen_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/finish_bottom"
+        android:layout_below="@id/finish_title"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginStart="@dimen/list_margin"
+            android:layout_marginTop="@dimen/list_margin"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <ListView
+            android:id="@+id/finish_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:listSelector="@drawable/listview_selector"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/list_margin"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginStart="@dimen/list_margin"
+            android:layout_marginTop="@dimen/list_margin"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pre_order_title_height"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginStart="@dimen/list_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/list_text_padding"
+                android:text="@string/ensure_total_credit"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/login_input_hint" />
+
+            <TextView
+                android:id="@+id/finish_sum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="@dimen/list_text_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/actionbar_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pre_order_title_height"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginStart="@dimen/list_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/list_text_padding"
+                android:text="@string/recyle_account"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/login_input_hint" />
+
+            <TextView
+                android:id="@+id/finish_account"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="@dimen/list_text_margin"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/login_input_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pre_order_title_height"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginStart="@dimen/list_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/list_text_padding"
+                android:text="@string/finishe_credit_before"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/login_input_hint" />
+
+            <TextView
+                android:id="@+id/finish_before"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="@dimen/list_text_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/actionbar_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pre_order_title_height"
+            android:layout_marginEnd="@dimen/list_margin"
+            android:layout_marginStart="@dimen/list_margin"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/list_text_padding"
+                android:text="@string/finishe_credit_end"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/login_input_hint" />
+
+            <TextView
+                android:id="@+id/finish_end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:paddingEnd="@dimen/list_text_margin"
+                android:textColor="@color/black"
+                android:textSize="@dimen/actionbar_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

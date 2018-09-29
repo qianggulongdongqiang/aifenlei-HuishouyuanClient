@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/backgroud"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/history_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <View
+        android:id="@+id/history_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/history_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/history_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingTop="1dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/list_ensure_margin"
+                android:text="@string/history_total_credit"
+                android:textColor="@color/login_title"
+                android:textSize="@dimen/login_input_hint" />
+
+            <TextView
+                android:id="@+id/history_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end"
+                android:text="@string/history_total_credit_default"
+                android:paddingEnd="@dimen/list_ensure_margin"
+                android:textColor="@color/yellow_default"
+                android:textSize="@dimen/actionbar_text_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/history_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/button_default_selector"
+            android:contentDescription="@string/ensure_ok_back"
+            android:src="@drawable/home_icon" />
+    </LinearLayout>
+
+    <com.arcfun.aifenx.view.ViewPagerTabs
+        android:id="@+id/history_pager_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_below="@id/history_divider"
+        android:textColor="@color/login_title"
+        android:textSize="@dimen/login_main"
+        android:orientation="horizontal" />
+
+    <View
+        android:id="@+id/history_divider2"
+        android:layout_width="match_parent"
+        android:layout_below="@id/history_pager_header"
+        android:layout_height="5dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/history_bottom"
+        android:layout_below="@id/history_divider2" />
+
+</RelativeLayout>

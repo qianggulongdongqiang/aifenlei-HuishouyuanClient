@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/query_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <View
+        android:id="@+id/query_divder"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/query_actionbar"
+        android:background="@color/backgroud" />
+
+    <ImageView
+        android:id="@+id/query_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/button_default_selector"
+        android:contentDescription="@string/ensure_ok_back"
+        android:src="@drawable/home_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/query_home"
+        android:layout_below="@id/query_divder"
+        android:background="@color/white"
+        android:paddingTop="@dimen/credit_login_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/query_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_marginEnd="@dimen/login_des_margin"
+            android:layout_marginStart="@dimen/login_des_margin"
+            android:background="@color/backgroud"
+            android:hint="@string/credit_input_phone"
+            android:inputType="phone"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColorHint="@color/login_input_hint"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/login_input_hint" />
+
+        <Button
+            android:id="@+id/query_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/login_button_height"
+            android:layout_marginEnd="@dimen/login_des_margin"
+            android:layout_marginStart="@dimen/login_des_margin"
+            android:layout_marginTop="@dimen/ensure_btn_margin_top"
+            android:background="@drawable/button_selector"
+            android:enabled="false"
+            android:text="@string/credit_query" />
+    </LinearLayout>
+
+</RelativeLayout>

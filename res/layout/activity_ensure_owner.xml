@@ -1,0 +1,167 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.arcfun.aifenx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/backgroud" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin" >
+
+        <TextView
+            android:id="@+id/ensure_account_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/account_title"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/ensure_account"
+            android:layout_toRightOf="@id/ensure_account_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/owner_title"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/ensure_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/sex_title"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/ensure_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_long_margin"
+            android:text="@string/sex_title"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/contact_title"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/ensure_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/addr_title"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+       <TextView
+            android:id="@+id/ensure_addr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="2"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/ensure_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="@string/ensure"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

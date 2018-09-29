@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="false"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_title_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin" >
+
+        <TextView
+            android:id="@+id/pre_order_sn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_sn"
+            android:textColor="@color/yellow_default"
+            android:textSize="@dimen/login_input_hint" />
+
+        <ImageView
+            android:id="@+id/pre_order_rfid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/menu_order"
+            android:visibility="gone"
+            android:src="@drawable/new_user"/>
+
+        <TextView
+            android:id="@+id/pre_order_sn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/pre_order_sn_title"
+            android:layout_toLeftOf="@id/pre_order_rfid"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:text="@string/pre_order_sn"
+            android:textColor="@color/yellow_default"
+            android:textSize="@dimen/login_input_hint" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_item_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_time"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_item_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_category"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:text="@string/sex_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_item_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/pre_order_number"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/pre_order_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:background="@color/split_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pre_order_bottom_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin" >
+
+        <TextView
+            android:id="@+id/pre_order_manage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingStart="@dimen/list_text_padding"
+            android:visibility="gone"
+            android:text="@string/pre_order_manager"
+            android:textColor="@color/ensure_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <Button
+            android:id="@+id/pre_order_action"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingStart="@dimen/manage_ensure_h_paddding"
+            android:paddingEnd="@dimen/manage_ensure_h_paddding"
+            android:layout_marginTop="@dimen/manage_ensure_v_paddding"
+            android:layout_marginBottom="@dimen/manage_ensure_v_paddding"
+            android:background="@drawable/dialog_button_light"
+            android:text="@string/manage_receive"
+            android:textColor="@color/login_title"
+            android:focusable="false"
+            android:textSize="@dimen/login_bottom" />
+
+        <TextView
+            android:id="@+id/pre_order_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/pre_order_manage_title"
+            android:layout_toLeftOf="@id/pre_order_action"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_ensure_margin"
+            android:visibility="gone"
+            android:hint="@string/pre_order_manager"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </RelativeLayout>
+
+</LinearLayout>

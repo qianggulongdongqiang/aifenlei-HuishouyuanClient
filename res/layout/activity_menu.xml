@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <include
+        android:id="@+id/menu_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/menu_top_margin"
+        android:paddingStart="@dimen/menu_horizon_margin"
+        android:paddingEnd="@dimen/menu_horizon_margin"
+        android:paddingBottom="@dimen/menu_bottom_margin"
+        android:layout_below="@id/menu_actionbar"
+        android:divider="@drawable/menu_spacer"
+        android:showDividers="middle"
+        android:orientation="vertical"
+        android:weightSum="5"
+        android:background="@drawable/bg1" >
+
+        <Button
+            android:id="@+id/new_owner"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/menu_button_selector"
+            android:layout_weight="1"
+            android:text="@string/menu_new"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+        <Button
+            android:id="@+id/recyle_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/menu_button_selector"
+            android:layout_weight="1"
+            android:text="@string/menu_order"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+        <Button
+            android:id="@+id/credit_exchange"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/menu_button_selector"
+            android:layout_weight="1"
+            android:text="@string/menu_credit"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+        <Button
+            android:id="@+id/history_list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/menu_button_selector"
+            android:layout_weight="1"
+            android:text="@string/menu_history"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+        <Button
+            android:id="@+id/owner_ensure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/menu_button_selector"
+            android:layout_weight="1"
+            android:text="@string/menu_ensure"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+    </LinearLayout>
+
+</RelativeLayout>

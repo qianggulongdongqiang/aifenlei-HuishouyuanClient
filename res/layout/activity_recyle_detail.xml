@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/detail_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <View
+        android:id="@+id/detail_divider"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/detail_actionbar"
+        android:background="@color/backgroud" />
+
+    <Button
+        android:id="@+id/recyle_done"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_selector"
+        android:text="@string/pre_to_recyle"
+        android:textColor="@color/login_title"
+        android:textSize="@dimen/menu_text_size" />
+
+    <include layout="@layout/order_detail_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/recyle_done"
+        android:layout_below="@id/detail_divider" />
+
+</RelativeLayout>

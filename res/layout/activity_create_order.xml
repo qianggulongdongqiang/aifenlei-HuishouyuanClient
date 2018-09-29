@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:gravity="center_horizontal" >
+
+    <include
+        android:id="@+id/create_actionbar"
+        layout="@layout/actionbar_layout" />
+
+    <View
+        android:id="@+id/create_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/create_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/create_input_ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_below="@id/create_divider1"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingEnd="@dimen/list_margin"
+        android:paddingStart="@dimen/list_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/recyle_account"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <AutoCompleteTextView
+            android:id="@+id/input_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:completionThreshold="7"
+            android:dropDownSelector="@drawable/button_default_selector"
+            android:hint="@string/recyle_account_msg"
+            android:inputType="phone"
+            android:labelFor="@id/input_number"
+            android:popupBackground="@drawable/rectangle_popup_bg"
+            android:textColor="@color/login_title"
+            android:textColorHint="@color/input_hint"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/create_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/create_input_ll" />
+
+    <LinearLayout
+        android:id="@+id/create_rfid_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_divider2"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_marginBottom="@dimen/login_logo_margin"
+            android:layout_marginEnd="@dimen/actionbar_margin"
+            android:layout_marginStart="@dimen/actionbar_margin"
+            android:layout_marginTop="@dimen/login_logo_margin"
+            android:background="@drawable/input_btn_backgroud"
+            android:gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/recyle_input_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/list_margin"
+                android:layout_marginStart="@dimen/list_margin"
+                android:text="@string/ensure"
+                android:textColor="@color/yellow_default"
+                android:textSize="@dimen/login_input_hint" />
+
+            <View
+                android:id="@+id/recyle_input_divider"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/pre_order_item_height"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/recyle_input_ok"
+                android:background="@color/login_description" />
+
+            <Button
+                android:id="@+id/recyle_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="@dimen/list_margin"
+                android:layout_marginStart="@dimen/list_margin"
+                android:layout_toLeftOf="@id/recyle_input_divider"
+                android:background="@drawable/scan" />
+
+            <EditText
+                android:id="@+id/input_rfid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/recyle_scan"
+                android:background="@null"
+                android:hint="@string/recyle_scan_msg"
+                android:inputType="number"
+                android:maxLength="30"
+                android:paddingStart="@dimen/list_text_margin"
+                android:textColor="@color/login_title"
+                android:textColorHint="@color/login_input_hint"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="@dimen/login_input_hint" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/recyle_rfid_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recyle_list_height"
+        android:layout_below="@id/create_rfid_ll"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="@dimen/list_text_padding"
+        android:listSelector="@drawable/listview_selector"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/create_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/recyle_rfid_list" />
+
+    <LinearLayout
+        android:id="@+id/create_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingTop="1dp" >
+
+        <Button
+            android:id="@+id/create_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/create_bottom"
+        android:layout_below="@id/create_divider3"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/create_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@drawable/listview_selector"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</RelativeLayout>

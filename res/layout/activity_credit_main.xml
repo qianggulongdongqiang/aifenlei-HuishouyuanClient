@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.arcfun.aifenx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/backgroud" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/recyle_account"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/score_detail_account"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/recyle_account"
+            android:paddingStart="@dimen/list_text_padding"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/finishe_credit_end"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <TextView
+            android:id="@+id/score_detail_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="@string/recyle_account"
+            android:paddingStart="@dimen/list_text_padding"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/backgroud" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/credit_input_way"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <com.arcfun.aifenx.view.SpinnerView
+            android:id="@+id/spinner_ways"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/listview_selector"
+            android:paddingStart="@dimen/list_text_padding"
+            app:text_hint="@string/credit_input_way" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/credit_input_msg"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <EditText
+            android:id="@+id/score_detail_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/credit_input_hint"
+            android:inputType="number"
+            android:paddingStart="@dimen/list_text_margin"
+            android:textColor="@color/login_title"
+            android:textColorHint="@color/input_hint"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="70dp"
+        android:background="@color/split_line" />
+
+    <EditText
+        android:id="@+id/score_name_input"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:background="@null"
+        android:hint="@string/credit_input_name_hint"
+        android:inputType="text"
+        android:layout_marginStart="@dimen/list_margin"
+        android:textColor="@color/login_title"
+        android:textColorHint="@color/input_hint"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="@dimen/login_input_hint" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="@dimen/list_margin"
+        android:layout_marginStart="@dimen/list_margin"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/score_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="@string/next"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/menu_text_size" />
+    </LinearLayout>
+
+</LinearLayout>

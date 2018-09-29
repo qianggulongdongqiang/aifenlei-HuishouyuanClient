@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/actionbar_layout" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/backgroud" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:paddingStart="@dimen/list_margin"
+        android:paddingEnd="@dimen/list_margin"
+        android:background="@color/white" >
+
+        <TextView
+            android:id="@+id/credit_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/credit_phone"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <Button
+            android:id="@+id/cost_code_btn"
+            android:layout_width="@dimen/code_btn_width"
+            android:layout_height="@dimen/code_btn_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:text="@string/credit_token_btn"
+            android:paddingStart="@dimen/manage_ensure_v_paddding"
+            android:paddingEnd="@dimen/manage_ensure_v_paddding"
+            android:background="@drawable/code_button_dark"  />
+
+        <TextView
+            android:id="@+id/cost_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/cost_code_btn"
+            android:layout_toRightOf="@id/credit_title"
+            android:gravity="center_vertical"
+            android:hint="@string/recyle_account"
+            android:paddingStart="@dimen/list_text_padding"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/split_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_button_height"
+        android:paddingStart="@dimen/list_margin"
+        android:paddingEnd="@dimen/list_margin"
+        android:background="@color/white" 
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/list_text_padding"
+            android:text="@string/credit_token"
+            android:textColor="@color/login_title"
+            android:textSize="@dimen/login_input_hint" />
+
+        <EditText
+            android:id="@+id/cost_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/credit_input_token"
+            android:inputType="number"
+            android:paddingStart="@dimen/list_text_extend_padding"
+            android:textColor="@color/login_title"
+            android:textColorHint="@color/input_hint"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="@dimen/login_input_hint" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cost_login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_button_height"
+        android:layout_marginEnd="@dimen/login_des_margin"
+        android:layout_marginStart="@dimen/login_des_margin"
+        android:layout_marginTop="@dimen/ensure_btn_margin_top"
+        android:background="@drawable/button_selector"
+        android:enabled="false"
+        android:text="@string/credit_submit" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/cost_home"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_button_height"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/button_default_selector"
+            android:contentDescription="@string/ensure_ok_back"
+            android:gravity="center"
+            android:src="@drawable/home_icon" />
+    </LinearLayout>
+
+</LinearLayout>

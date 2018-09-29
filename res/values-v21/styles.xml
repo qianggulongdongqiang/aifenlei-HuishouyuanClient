@@ -1,0 +1,24 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_exit</item>
+    </style>
+    <style name="AppThemeNoTitle" parent="@style/WindowAnimTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="WindowAnimTheme" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/anim_exit</item>
+    </style>
+
+</resources>
